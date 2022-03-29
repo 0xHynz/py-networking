@@ -13,7 +13,7 @@ def stringed(data):
 
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-   # AF_INET = Family Address
+   # AF_INET = Family Address of ipv4
    # SOCK_STREAM = jenis socket untuk TCP
 
 
@@ -21,7 +21,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                        # host harus ipv4, sedang port bilangan bulat dari 1-65535
    s.listen() # menerima koneksi dengan mendengarkan/menunggu
 
-   conn, addr = s.accept() #data of family address
+   conn, addr = s.accept() #
    print (s.accept)
 
    with conn:
